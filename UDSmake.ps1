@@ -1,5 +1,5 @@
 ps Acrobat -ErrorAction SilentlyContinue | kill -PassThru
-cd C:\Users\FrontDesk1\
+cd $env:USERPROFILE
 pdflatex UDS_tickets.tex
-C:\Users\FrontDesk1\UDS_tickets.pdf
+$env:USERPROFILE\UDS_tickets.pdf
 taskkill /im powershell.exe
