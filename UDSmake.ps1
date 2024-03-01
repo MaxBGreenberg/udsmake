@@ -1,5 +1,6 @@
 # PowerShell script to update and open file UDS_tickets.pdf
 # Uses LaTeX file which will print current month and year when compiled
+# Licensed under GNU GPL v2
 ps Acrobat -ErrorAction SilentlyContinue | kill -PassThru		# Check if Abode accrobat is running and, if it is, kill it
 cd $env:USERPROFILE							# Change to user's home directory
 pdflatex UDS_tickets.tex						# Compile UDS_ticket.tex to PDF
